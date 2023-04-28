@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "virtual-keyboard": "^1.30.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.39.0"
+  }
+}
