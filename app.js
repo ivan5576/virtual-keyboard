@@ -381,10 +381,13 @@ addKeyboard();
 
 // Highlight button when press on it
 
-document.onkeydown = function (event) {
+document.addEventListener('keydown', (event) => {
   document.getElementById(event.code).classList.add('active');
-};
+  const textarea = document.querySelector('textarea');
+  console.log(textarea);
+  textarea.innerHTML += event.key;
+});
 
-document.onkeyup = function (event) {
+document.addEventListener('keyup', (event) => {
   document.getElementById(event.code).classList.remove('active');
-};
+});
