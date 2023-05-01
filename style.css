@@ -4,8 +4,10 @@
 
 .title {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
     font-size: 1.6rem;
     text-align: center;
+    color: #444444;
 }
 
 .textarea {
@@ -94,8 +96,9 @@
 .char__name {
     margin: 0;
     display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-align: center;
+    color: #444444;
 }
-
-/* .char.code-ControlLeft {
-    width: 93px;
-} */
