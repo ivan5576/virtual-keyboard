@@ -1,0 +1,111 @@
+.wrapper {
+    margin: 0 auto;
+}
+
+.title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #444444;
+}
+
+.textarea {
+    display: block;
+    width: 700px;
+    height: 200px;
+    margin: 10px auto 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #444444;
+    overflow: auto;
+}
+
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 704px;
+    border-radius: 5px;
+    margin: 10px auto 10px;
+    padding: 6px 6px 0 0;
+    background: ghostwhite;
+    border: 1px solid gray;
+}
+
+.keyboard__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.char{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    background: lightgray;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 6px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+}
+
+.Backspace,
+.CapsLock,
+.ShiftLeft,
+.Tab,
+.Delete,
+.Enter,
+.ShiftRight,
+.ControlLeft,
+.MetaLeft,
+.AltLeft,
+.AltRight,
+.ArrowLeft,
+.ArrowUp,
+.ArrowDown,
+.ArrowRight,
+.ControlRight {
+    background: lightslategray;
+}
+
+.active{
+    transition: 0.1s ease-in;
+    background: lightgreen;
+}
+
+.char.Backspace,
+.char.CapsLock,
+.char.ShiftLeft {
+    width: 100px;
+}
+
+.char.Tab {
+    width: 50px;
+}
+
+.char.Del {
+    width: 44px;
+}
+
+.char.Enter,
+.char.ShiftRight {
+    width: 86px;
+}
+
+.char.Space {
+    width: 330px;
+}
+
+.char__name {
+    margin: 0;
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-align: center;
+    color: #444444;
+}
