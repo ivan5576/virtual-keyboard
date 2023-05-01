@@ -361,7 +361,7 @@ function addKeyboard() {
     let char = '';
 
     for (let i = 0; i < row.length; i += 1) {
-      char += `<div class="char ${row[i].code}"><p class="char__name">${row[i].EN}</p></div>`;
+      char += `<div class="char ${row[i].code}" id="${row[i].code}"><p class="char__name">${row[i].EN}</p></div>`;
     }
     document.querySelectorAll('.keyboard__row')[rowNum].innerHTML = char;
   }
@@ -378,3 +378,13 @@ function addKeyboard() {
 }
 
 addKeyboard();
+
+// Highlight button when press on it
+
+document.onkeydown = function (event) {
+  document.getElementById(event.code).classList.add('active');
+};
+
+document.onkeyup = function (event) {
+  document.getElementById(event.code).classList.remove('active');
+};

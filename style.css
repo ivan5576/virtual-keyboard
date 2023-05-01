@@ -36,7 +36,7 @@
     display: flex;
 }
 
-.char {
+.char{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,25 +49,31 @@
     margin-left: 6px;
     margin-bottom: 6px;
     cursor: pointer;
+    transition: 0.1s ease-in;
 }
 
-.char.Backspace,
-.char.CapsLock,
-.char.ShiftLeft,
-.char.Tab,
-.char.Delete,
-.char.Enter,
-.char.ShiftRight,
-.char.Space,
-.char.ControlLeft,
-.char.MetaLeft,
-.char.AltLeft,
-.char.AltRight,
-.char.ArrowLeft,
-.char.ArrowDown,
-.char.ArrowRight,
-.char.ControlRight {
+.Backspace,
+.CapsLock,
+.ShiftLeft,
+.Tab,
+.Delete,
+.Enter,
+.ShiftRight,
+.ControlLeft,
+.MetaLeft,
+.AltLeft,
+.AltRight,
+.ArrowLeft,
+.ArrowUp,
+.ArrowDown,
+.ArrowRight,
+.ControlRight {
     background: lightslategray;
+}
+
+.active{
+    transition: 0.1s ease-in;
+    background: lightgreen;
 }
 
 .char.Backspace,
