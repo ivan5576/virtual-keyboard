@@ -267,7 +267,7 @@ const KEY_BTNS = [
   {
     key: 'ArrowUp',
     code: 'ArrowUp',
-    EN: '&uarr;',
+    EN: '↑',
   },
   {
     key: 'Shift',
@@ -302,17 +302,17 @@ const KEY_BTNS = [
   {
     key: 'ArrowLeft',
     code: 'ArrowLeft',
-    EN: '&larr;',
+    EN: '←',
   },
   {
     key: 'ArrowDown',
     code: 'ArrowDown',
-    EN: '&darr;',
+    EN: '↓',
   },
   {
     key: 'ArrowRight',
     code: 'ArrowRight',
-    EN: '&rarr;',
+    EN: '→',
   },
   {
     key: 'Control',
@@ -363,7 +363,7 @@ document.addEventListener('keydown', (event) => {
   const textarea = document.querySelector('textarea');
   const index = KEY_BTNS.findIndex((object) => object.code === event.code);
   if (event.code === 'Enter') {
-    textarea.value += '\r\n';
+    textarea.value += '\n';
     return;
   } if (event.code === 'Tab') {
     event.preventDefault();
@@ -394,10 +394,10 @@ document.addEventListener('keyup', (event) => {
 
 // Events when click mouse
 
-// document.querySelector('.keyboard').addEventListener('mouseover', (event) => {
-//   console.log(event.target.id);
-//   document.getElementById(event.target.id).classList.add('active');
-// });
+document.querySelector('.keyboard').addEventListener('click', (event) => {
+  console.log(event.target.id);
+  // textarea.
+});
 
 // document.querySelector('.keyboard').addEventListener('mouseout', (event) => {
 //   document.getElementById(event.target.id).classList.remove('active');
