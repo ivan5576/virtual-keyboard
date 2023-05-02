@@ -356,7 +356,7 @@ function addKeyboard() {
 
 addKeyboard();
 
-// Events when press button
+// Events when press button on physial keyboard
 
 document.addEventListener('keydown', (event) => {
   document.getElementById(event.code).classList.add('active');
@@ -391,3 +391,14 @@ document.addEventListener('keydown', (event) => {
 document.addEventListener('keyup', (event) => {
   document.getElementById(event.code).classList.remove('active');
 });
+
+// Events when click mouse
+
+// document.querySelector('.keyboard').addEventListener('mouseover', (event) => {
+//   console.log(event.target.id);
+//   document.getElementById(event.target.id).classList.add('active');
+// });
+
+// document.querySelector('.keyboard').addEventListener('mouseout', (event) => {
+//   document.getElementById(event.target.id).classList.remove('active');
+// });
