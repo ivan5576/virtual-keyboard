@@ -72,7 +72,12 @@
     background: lightslategray;
 }
 
-.active{
+.char:hover {
+    transition: 0.1s ease-in;
+    background: lightgreen;
+}
+
+.active {
     transition: 0.1s ease-in;
     background: lightgreen;
 }
